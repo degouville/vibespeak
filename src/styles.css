@@ -382,3 +382,60 @@ a {
     @apply font-sans;
   }
 }
+
+/* === VibeSPeak Custom Styles === */
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-lg {
+  grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+  .card-lg {
+    grid-column: span 1;
+  }
+}
+
+.word-card {
+  opacity: 1;
+}
+
+.phonetic-guide {
+  background: linear-gradient(165deg, var(--surface-strong), var(--surface));
+}
+
+.usage-bar {
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.usage-bar-fill {
+  background: linear-gradient(90deg, var(--lagoon), #facc15);
+}
+
+.sidebar {
+  position: sticky;
+  top: 5rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    position: static;
+  }
+}
+
+.lang-btn {
+  opacity: 1;
+}

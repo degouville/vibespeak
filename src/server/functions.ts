@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createServerFn } from '@tanstack/react-start'
 import { db } from '../lib/db'
 import { sessions, usage } from '../lib/schema'
@@ -7,10 +8,9 @@ import { buildSystemPrompt, buildGeneratePrompt } from './prompts'
 import { LANGUAGES, RATE_LIMIT_USD } from '../lib/constants'
 import { eq, sql } from 'drizzle-orm'
 
-export const initSession = createServerFn({ method: 'POST' })
-  .validator((data: unknown) => initSessionRequestSchema.parse(data))
-  .handler(async ({ data }) => {
-    const { nativeLang, targetLang } = data
+const _initSession = createServerFn({ method: 'POST' })
+  .handler(async (ctx: any) => {
+    const { nativeLang, targetLang } = initSessionRequestSchema.parse(ctx.data)
     const id = crypto.randomUUID()
 
     db.insert(sessions).values({
@@ -23,9 +23,9 @@ export const initSession = createServerFn({ method: 'POST' })
     return { sessionId: id }
   })
 
-export const getSessionUsage = createServerFn({ method: 'GET' })
-  .validator((data: { sessionId: string }) => data)
-  .handler(async ({ data }) => {
+const _getSessionUsage = createServerFn({ method: 'GET' })
+  .handler(async (ctx: any) => {
+    const { sessionId } = ctx.data as { sessionId: string }
     const result = db
       .select({
         totalCost: sql<number>`coalesce(sum(${usage.costUsd}), 0)`,
@@ -33,7 +33,7 @@ export const getSessionUsage = createServerFn({ method: 'GET' })
         totalOutputTokens: sql<number>`coalesce(sum(${usage.outputTokens}), 0)`,
       })
       .from(usage)
-      .where(eq(usage.sessionId, data.sessionId))
+      .where(eq(usage.sessionId, sessionId))
       .get()
 
     return {
@@ -45,13 +45,11 @@ export const getSessionUsage = createServerFn({ method: 'GET' })
     }
   })
 
-export const generateWords = createServerFn({ method: 'POST' })
-  .validator((data: unknown) => generateRequestSchema.parse(data))
-  .handler(async ({ data }) => {
-    const { sessionId, nativeLang, targetLang, category, context } = data
+const _generateWords = createServerFn({ method: 'POST' })
+  .handler(async (ctx: any) => {
+    const { sessionId, nativeLang, targetLang, category, context } = generateRequestSchema.parse(ctx.data)
 
-    // Rate limit check
-    const currentUsage = await getSessionUsage({ data: { sessionId } })
+    const currentUsage = await (_getSessionUsage as any)({ data: { sessionId } })
     if (currentUsage.remaining <= 0) {
       return { error: 'Budget limit reached. You have used your $0.10 session budget.', words: [] }
     }
@@ -67,7 +65,6 @@ export const generateWords = createServerFn({ method: 'POST' })
       { role: 'user', content: userPrompt },
     ])
 
-    // Track usage
     db.insert(usage).values({
       sessionId,
       inputTokens: result.inputTokens,
@@ -76,7 +73,6 @@ export const generateWords = createServerFn({ method: 'POST' })
       createdAt: new Date(),
     }).run()
 
-    // Parse and validate AI response
     try {
       const parsed = JSON.parse(result.content)
       const validated = aiResponseSchema.parse(parsed)
@@ -85,3 +81,21 @@ export const generateWords = createServerFn({ method: 'POST' })
       return { error: 'Failed to parse AI response. Try again.', words: [] }
     }
   })
+
+export const initSession = _initSession as unknown as (opts: { data: { nativeLang: string; targetLang: string } }) => Promise<{ sessionId: string }>
+
+export const getSessionUsage = _getSessionUsage as unknown as (opts: { data: { sessionId: string } }) => Promise<{
+  totalCost: number
+  totalInputTokens: number
+  totalOutputTokens: number
+  limit: number
+  remaining: number
+}>
+
+export const generateWords = _generateWords as unknown as (opts: { data: {
+  sessionId: string
+  nativeLang: string
+  targetLang: string
+  category?: string
+  context?: string
+} }) => Promise<{ words: Array<{ word: string; translation: string; phonetic: string; nativeApprox: string; difficulty: 'beginner' | 'intermediate' | 'advanced'; category: string; exampleSentence: string }>; error: string | null }>

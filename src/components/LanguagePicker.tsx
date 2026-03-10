@@ -82,6 +82,7 @@ export default function LanguagePicker() {
               onClick={() => handleSelect(lang.code)}
               className="lang-btn island-shell feature-card flex items-center gap-3 rounded-xl p-4 text-left transition hover:-translate-y-0.5"
             >
+              <span className="text-2xl">{lang.flag}</span>
               <span className="text-lg font-bold text-[var(--sea-ink)]">
                 {lang.name}
               </span>

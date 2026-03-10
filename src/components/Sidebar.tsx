@@ -33,11 +33,11 @@ export default function Sidebar({
         <p className="island-kicker mb-2">Language Pair</p>
         <div className="flex items-center gap-2 text-sm font-semibold text-[var(--sea-ink)]">
           <span className="rounded-lg border border-[var(--chip-line)] bg-[var(--chip-bg)] px-2 py-1">
-            {native?.name ?? nativeLang}
+            {native?.flag} {native?.name ?? nativeLang}
           </span>
           <span className="text-[var(--lagoon)]">&rarr;</span>
           <span className="rounded-lg border border-yellow-400/30 bg-yellow-400/10 px-2 py-1 text-yellow-600">
-            {target?.name ?? targetLang}
+            {target?.flag} {target?.name ?? targetLang}
           </span>
         </div>
       </div>

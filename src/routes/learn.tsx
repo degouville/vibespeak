@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import type { WordCard } from '../lib/schemas'
 import type { Category } from '../lib/constants'
 import { generateWords, getSessionUsage } from '../server/functions'
@@ -24,6 +24,13 @@ function LearnPage() {
   const [spent, setSpent] = useState(0)
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const didInit = useRef(false)
+  const sessionRef = useRef<SessionData | null>(null)
+  const categoryRef = useRef<Category | null>(null)
+
+  // Keep refs in sync
+  sessionRef.current = session
+  categoryRef.current = selectedCategory
 
   useEffect(() => {
     const stored = localStorage.getItem('vibespeak_session')
@@ -37,26 +44,29 @@ function LearnPage() {
     } catch {
       navigate({ to: '/' })
     }
-  }, [navigate])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const refreshUsage = useCallback(async () => {
-    if (!session) return
-    const data = await getSessionUsage({ data: { sessionId: session.sessionId } })
+    const s = sessionRef.current
+    if (!s) return
+    const data = await getSessionUsage({ data: { sessionId: s.sessionId } })
     setSpent(data.totalCost)
-  }, [session])
+  }, [])
 
   const handleGenerate = useCallback(async (context?: string) => {
-    if (!session) return
+    const s = sessionRef.current
+    if (!s) return
     setIsLoading(true)
     setError(null)
 
     try {
       const result = await generateWords({
         data: {
-          sessionId: session.sessionId,
-          nativeLang: session.nativeLang,
-          targetLang: session.targetLang,
-          category: selectedCategory ?? undefined,
+          sessionId: s.sessionId,
+          nativeLang: s.nativeLang,
+          targetLang: s.targetLang,
+          category: categoryRef.current ?? undefined,
           context,
         },
       })
@@ -73,17 +83,16 @@ function LearnPage() {
     } finally {
       setIsLoading(false)
     }
-  }, [session, selectedCategory, refreshUsage])
+  }, [refreshUsage])
 
+  // Auto-generate on first session load
   useEffect(() => {
-    if (session && cards.length === 0) {
+    if (session && !didInit.current) {
+      didInit.current = true
       handleGenerate()
+      refreshUsage()
     }
-  }, [session])
-
-  useEffect(() => {
-    if (session) refreshUsage()
-  }, [session, refreshUsage])
+  }, [session, handleGenerate, refreshUsage])
 
   const handleExplore = (word: string) => {
     handleGenerate(word)

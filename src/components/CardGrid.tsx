@@ -31,7 +31,7 @@ export default function CardGrid({ cards, targetLang, onExplore, isLoading }: Ca
     )
   }, [cards])
 
-  if (isLoading) {
+  if (isLoading && cards.length === 0) {
     return (
       <div className="bento-grid">
         {Array.from({ length: 8 }).map((_, i) => (
@@ -49,7 +49,7 @@ export default function CardGrid({ cards, targetLang, onExplore, isLoading }: Ca
     )
   }
 
-  if (cards.length === 0) {
+  if (!isLoading && cards.length === 0) {
     return (
       <div className="island-shell flex flex-col items-center justify-center rounded-2xl p-12 text-center">
         <p className="mb-2 text-lg font-semibold text-[var(--sea-ink)]">
@@ -63,16 +63,26 @@ export default function CardGrid({ cards, targetLang, onExplore, isLoading }: Ca
   }
 
   return (
-    <div ref={gridRef} className="bento-grid">
-      {cards.map((card, i) => (
-        <WordCard
-          key={`${card.word}-${i}`}
-          card={card}
-          targetLang={targetLang}
-          onExplore={onExplore}
-          index={i}
-        />
-      ))}
+    <div className="relative">
+      {isLoading && (
+        <div className="absolute inset-x-0 top-0 z-10 flex justify-center pt-4">
+          <div className="flex items-center gap-2 rounded-full border border-[var(--chip-line)] bg-[var(--chip-bg)] px-4 py-2 text-sm font-medium text-[var(--sea-ink-soft)] shadow-lg backdrop-blur-sm">
+            <span className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--lagoon)] border-t-transparent" />
+            Generating new words...
+          </div>
+        </div>
+      )}
+      <div ref={gridRef} className={`bento-grid ${isLoading ? 'opacity-50 pointer-events-none' : ''}`}>
+        {cards.map((card, i) => (
+          <WordCard
+            key={`${card.word}-${i}`}
+            card={card}
+            targetLang={targetLang}
+            onExplore={onExplore}
+            index={i}
+          />
+        ))}
+      </div>
     </div>
   )
 }

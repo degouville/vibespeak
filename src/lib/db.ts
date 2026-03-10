@@ -1,8 +1,11 @@
+import { resolve } from 'node:path'
+import { tmpdir } from 'node:os'
 import Database from 'better-sqlite3'
 import { drizzle } from 'drizzle-orm/better-sqlite3'
 import * as schema from './schema'
 
-const sqlite = new Database('vibespeak.db')
+const dbPath = resolve(tmpdir(), 'vibespeak.db')
+const sqlite = new Database(dbPath)
 sqlite.pragma('journal_mode = WAL')
 
 sqlite.exec(`
