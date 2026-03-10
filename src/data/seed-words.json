@@ -1,0 +1,1428 @@
+{
+  "interactions": [
+    {
+      "interaction": 1,
+      "description": "Essential greetings and introductions",
+      "words": {
+        "en": [
+          {
+            "word": "Hello",
+            "translation": "Hello",
+            "phonetic": "/həˈloʊ/",
+            "nativeApprox": "heh-LOH",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Hello, how are you today?"
+          },
+          {
+            "word": "Thank you",
+            "translation": "Thank you",
+            "phonetic": "/ˈθæŋk ju/",
+            "nativeApprox": "THANK yoo",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Thank you for your help."
+          },
+          {
+            "word": "Please",
+            "translation": "Please",
+            "phonetic": "/pliːz/",
+            "nativeApprox": "pleez",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Please pass me the water."
+          },
+          {
+            "word": "Good morning",
+            "translation": "Good morning",
+            "phonetic": "/ɡʊd ˈmɔːrnɪŋ/",
+            "nativeApprox": "gud MOR-ning",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Good morning! Did you sleep well?"
+          },
+          {
+            "word": "Goodbye",
+            "translation": "Goodbye",
+            "phonetic": "/ɡʊdˈbaɪ/",
+            "nativeApprox": "gud-BYE",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Goodbye, see you tomorrow!"
+          },
+          {
+            "word": "Sorry",
+            "translation": "Sorry",
+            "phonetic": "/ˈsɔːri/",
+            "nativeApprox": "SOR-ree",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "I'm sorry for being late."
+          },
+          {
+            "word": "Yes",
+            "translation": "Yes",
+            "phonetic": "/jes/",
+            "nativeApprox": "yess",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Yes, I understand."
+          },
+          {
+            "word": "No",
+            "translation": "No",
+            "phonetic": "/noʊ/",
+            "nativeApprox": "noh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "No, thank you."
+          }
+        ],
+        "fr": [
+          {
+            "word": "Bonjour",
+            "translation": "Hello",
+            "phonetic": "/bɔ̃ˈʒuʁ/",
+            "nativeApprox": "bon-ZHOOR",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Bonjour, comment allez-vous?"
+          },
+          {
+            "word": "Merci",
+            "translation": "Thank you",
+            "phonetic": "/mɛʁˈsi/",
+            "nativeApprox": "mair-SEE",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Merci beaucoup pour votre aide."
+          },
+          {
+            "word": "S'il vous plaît",
+            "translation": "Please",
+            "phonetic": "/sil vu plɛ/",
+            "nativeApprox": "seel voo PLEH",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Un café, s'il vous plaît."
+          },
+          {
+            "word": "Bonsoir",
+            "translation": "Good evening",
+            "phonetic": "/bɔ̃ˈswaʁ/",
+            "nativeApprox": "bon-SWAHR",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Bonsoir, enchanté de vous rencontrer."
+          },
+          {
+            "word": "Au revoir",
+            "translation": "Goodbye",
+            "phonetic": "/o ʁəˈvwaʁ/",
+            "nativeApprox": "oh ruh-VWAHR",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Au revoir et à bientôt!"
+          },
+          {
+            "word": "Excusez-moi",
+            "translation": "Excuse me",
+            "phonetic": "/ɛk.skyˈze mwa/",
+            "nativeApprox": "ek-skew-ZAY mwah",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Excusez-moi, où est la gare?"
+          },
+          {
+            "word": "Oui",
+            "translation": "Yes",
+            "phonetic": "/wi/",
+            "nativeApprox": "wee",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Oui, je comprends."
+          },
+          {
+            "word": "Non",
+            "translation": "No",
+            "phonetic": "/nɔ̃/",
+            "nativeApprox": "noh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Non, merci."
+          }
+        ],
+        "es": [
+          {
+            "word": "Hola",
+            "translation": "Hello",
+            "phonetic": "/ˈo.la/",
+            "nativeApprox": "OH-lah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "¡Hola! ¿Cómo estás?"
+          },
+          {
+            "word": "Gracias",
+            "translation": "Thank you",
+            "phonetic": "/ˈɡɾa.sjas/",
+            "nativeApprox": "GRAH-see-ahs",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Muchas gracias por todo."
+          },
+          {
+            "word": "Por favor",
+            "translation": "Please",
+            "phonetic": "/poɾ faˈβoɾ/",
+            "nativeApprox": "por fah-VOR",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Una mesa, por favor."
+          },
+          {
+            "word": "Buenos días",
+            "translation": "Good morning",
+            "phonetic": "/ˈbwe.nos ˈði.as/",
+            "nativeApprox": "BWEH-nohs DEE-ahs",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "¡Buenos días! ¿Qué tal?"
+          },
+          {
+            "word": "Adiós",
+            "translation": "Goodbye",
+            "phonetic": "/aˈðjos/",
+            "nativeApprox": "ah-DYOHSS",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Adiós, hasta mañana."
+          },
+          {
+            "word": "Lo siento",
+            "translation": "I'm sorry",
+            "phonetic": "/lo ˈsjen.to/",
+            "nativeApprox": "loh SYEN-toh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Lo siento mucho."
+          },
+          {
+            "word": "Sí",
+            "translation": "Yes",
+            "phonetic": "/si/",
+            "nativeApprox": "see",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Sí, por supuesto."
+          },
+          {
+            "word": "No",
+            "translation": "No",
+            "phonetic": "/no/",
+            "nativeApprox": "noh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "No, gracias."
+          }
+        ],
+        "de": [
+          {
+            "word": "Hallo",
+            "translation": "Hello",
+            "phonetic": "/ˈha.lo/",
+            "nativeApprox": "HAH-loh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Hallo, wie geht es dir?"
+          },
+          {
+            "word": "Danke",
+            "translation": "Thank you",
+            "phonetic": "/ˈdaŋ.kə/",
+            "nativeApprox": "DAHN-keh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Danke schön für deine Hilfe."
+          },
+          {
+            "word": "Bitte",
+            "translation": "Please",
+            "phonetic": "/ˈbɪ.tə/",
+            "nativeApprox": "BIH-teh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Ein Bier, bitte."
+          },
+          {
+            "word": "Guten Morgen",
+            "translation": "Good morning",
+            "phonetic": "/ˈɡuːtən ˈmɔʁɡən/",
+            "nativeApprox": "GOO-ten MOR-gen",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Guten Morgen! Wie geht's?"
+          },
+          {
+            "word": "Auf Wiedersehen",
+            "translation": "Goodbye",
+            "phonetic": "/aʊf ˈviːdɐzeːən/",
+            "nativeApprox": "owf VEE-der-zay-en",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Auf Wiedersehen und viel Glück!"
+          },
+          {
+            "word": "Entschuldigung",
+            "translation": "Excuse me",
+            "phonetic": "/ɛntˈʃʊldɪɡʊŋ/",
+            "nativeApprox": "ent-SHOOL-di-goong",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Entschuldigung, wo ist der Bahnhof?"
+          },
+          {
+            "word": "Ja",
+            "translation": "Yes",
+            "phonetic": "/jaː/",
+            "nativeApprox": "yah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Ja, das verstehe ich."
+          },
+          {
+            "word": "Nein",
+            "translation": "No",
+            "phonetic": "/naɪ̯n/",
+            "nativeApprox": "nine",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Nein, danke."
+          }
+        ],
+        "it": [
+          {
+            "word": "Ciao",
+            "translation": "Hello/Goodbye",
+            "phonetic": "/ˈt͡ʃa.o/",
+            "nativeApprox": "CHOW",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Ciao! Come stai?"
+          },
+          {
+            "word": "Grazie",
+            "translation": "Thank you",
+            "phonetic": "/ˈɡrat.t͡sje/",
+            "nativeApprox": "GRAHT-tsee-eh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Grazie mille per il tuo aiuto."
+          },
+          {
+            "word": "Per favore",
+            "translation": "Please",
+            "phonetic": "/per faˈvo.re/",
+            "nativeApprox": "pair fah-VOH-reh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Un caffè, per favore."
+          },
+          {
+            "word": "Buongiorno",
+            "translation": "Good morning",
+            "phonetic": "/ˌbwonˈd͡ʒorno/",
+            "nativeApprox": "bwohn-JOR-noh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Buongiorno! Come va?"
+          },
+          {
+            "word": "Arrivederci",
+            "translation": "Goodbye",
+            "phonetic": "/arriveˈdert͡ʃi/",
+            "nativeApprox": "ahr-ree-veh-DER-chee",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Arrivederci a domani!"
+          },
+          {
+            "word": "Mi scusi",
+            "translation": "Excuse me",
+            "phonetic": "/mi ˈsku.zi/",
+            "nativeApprox": "mee SKOO-zee",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Mi scusi, dov'è la stazione?"
+          },
+          {
+            "word": "Sì",
+            "translation": "Yes",
+            "phonetic": "/si/",
+            "nativeApprox": "see",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Sì, capisco perfettamente."
+          },
+          {
+            "word": "No",
+            "translation": "No",
+            "phonetic": "/nɔ/",
+            "nativeApprox": "noh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "No, grazie."
+          }
+        ],
+        "pt": [
+          {
+            "word": "Olá",
+            "translation": "Hello",
+            "phonetic": "/oˈla/",
+            "nativeApprox": "oh-LAH",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Olá! Como você está?"
+          },
+          {
+            "word": "Obrigado",
+            "translation": "Thank you",
+            "phonetic": "/o.bɾiˈɡa.du/",
+            "nativeApprox": "oh-bree-GAH-doh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Muito obrigado pela ajuda."
+          },
+          {
+            "word": "Por favor",
+            "translation": "Please",
+            "phonetic": "/poɾ faˈvoɾ/",
+            "nativeApprox": "por fah-VOR",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Uma mesa, por favor."
+          },
+          {
+            "word": "Bom dia",
+            "translation": "Good morning",
+            "phonetic": "/bõ ˈd͡ʒi.ɐ/",
+            "nativeApprox": "bohm JEE-ah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Bom dia! Tudo bem?"
+          },
+          {
+            "word": "Adeus",
+            "translation": "Goodbye",
+            "phonetic": "/aˈdewʃ/",
+            "nativeApprox": "ah-DEH-oosh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Adeus, até amanhã!"
+          },
+          {
+            "word": "Desculpe",
+            "translation": "Sorry",
+            "phonetic": "/deʃˈkul.pi/",
+            "nativeApprox": "desh-KOOL-peh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Desculpe pelo atraso."
+          },
+          {
+            "word": "Sim",
+            "translation": "Yes",
+            "phonetic": "/sĩ/",
+            "nativeApprox": "sing",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Sim, eu entendo."
+          },
+          {
+            "word": "Não",
+            "translation": "No",
+            "phonetic": "/ˈnɐ̃w̃/",
+            "nativeApprox": "nah-oh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Não, obrigado."
+          }
+        ],
+        "ja": [
+          {
+            "word": "こんにちは",
+            "translation": "Hello",
+            "phonetic": "/koɴniʥiwa/",
+            "nativeApprox": "kohn-nee-chee-wah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "こんにちは、お元気ですか。"
+          },
+          {
+            "word": "ありがとう",
+            "translation": "Thank you",
+            "phonetic": "/aɾiɡatoː/",
+            "nativeApprox": "ah-ree-gah-toh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "ありがとうございます。"
+          },
+          {
+            "word": "お願いします",
+            "translation": "Please",
+            "phonetic": "/oɯneɰaʃimaɯ/",
+            "nativeApprox": "oh-neh-gigh shee-mahs",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "水をお願いします。"
+          },
+          {
+            "word": "おはよう",
+            "translation": "Good morning",
+            "phonetic": "/ohaʲoː/",
+            "nativeApprox": "oh-hah-yoh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "おはようございます！"
+          },
+          {
+            "word": "さようなら",
+            "translation": "Goodbye",
+            "phonetic": "/saʲoːnaɾa/",
+            "nativeApprox": "sah-yoh-nah-rah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "さようなら、また明日。"
+          },
+          {
+            "word": "すみません",
+            "translation": "Excuse me/Sorry",
+            "phonetic": "/sɯmimaʃeɴ/",
+            "nativeApprox": "soo-mee-mah-sen",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "すみません、駅はどこですか。"
+          },
+          {
+            "word": "はい",
+            "translation": "Yes",
+            "phonetic": "/haɪ/",
+            "nativeApprox": "high",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "はい、わかりました。"
+          },
+          {
+            "word": "いいえ",
+            "translation": "No",
+            "phonetic": "/iːe/",
+            "nativeApprox": "ee-eh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "いいえ、結構です。"
+          }
+        ],
+        "ko": [
+          {
+            "word": "안녕하세요",
+            "translation": "Hello",
+            "phonetic": "/anɲʌŋhaʃɛjo/",
+            "nativeApprox": "ahn-nyoung-hah-seh-yoh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "안녕하세요, 만나서 반갑습니다."
+          },
+          {
+            "word": "감사합니다",
+            "translation": "Thank you",
+            "phonetic": "/kamsʰamɲida/",
+            "nativeApprox": "kahm-sah-hahm-nee-dah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "정말 감사합니다."
+          },
+          {
+            "word": "주세요",
+            "translation": "Please (give me)",
+            "phonetic": "/t͡ɕusɛjo/",
+            "nativeApprox": "joo-seh-yoh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "물 주세요."
+          },
+          {
+            "word": "좋은 아침",
+            "translation": "Good morning",
+            "phonetic": "/t͡ɕoɯɯn at͡ɕʰim/",
+            "nativeApprox": "joh-eun ah-chim",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "좋은 아침이에요!"
+          },
+          {
+            "word": "안녕히 가세요",
+            "translation": "Goodbye",
+            "phonetic": "/anɲʌŋhi ɡasɛjo/",
+            "nativeApprox": "ahn-nyoung-hee kah-seh-yoh",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "안녕히 가세요, 내일 봐요."
+          },
+          {
+            "word": "죄송합니다",
+            "translation": "I'm sorry",
+            "phonetic": "/t͡ɕwesʰoŋhamɲida/",
+            "nativeApprox": "jweh-song-hahm-nee-dah",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "죄송합니다, 늦었어요."
+          },
+          {
+            "word": "네",
+            "translation": "Yes",
+            "phonetic": "/nɛ/",
+            "nativeApprox": "neh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "네, 알겠습니다."
+          },
+          {
+            "word": "아니요",
+            "translation": "No",
+            "phonetic": "/anijo/",
+            "nativeApprox": "ah-nee-yoh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "아니요, 괜찮습니다."
+          }
+        ],
+        "zh": [
+          {
+            "word": "你好",
+            "translation": "Hello",
+            "phonetic": "/ni˦˨ xɑʊ̯˨˩˦/",
+            "nativeApprox": "nee-how",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "你好，你好吗？"
+          },
+          {
+            "word": "谢谢",
+            "translation": "Thank you",
+            "phonetic": "/ɕjɛ˥˩ ɕjɛ/",
+            "nativeApprox": "shesheh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "非常感谢你。"
+          },
+          {
+            "word": "请",
+            "translation": "Please",
+            "phonetic": "/tɕʰiŋ˨˩˦/",
+            "nativeApprox": "cheeng",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "请给我一杯水。"
+          },
+          {
+            "word": "早上好",
+            "translation": "Good morning",
+            "phonetic": "/t͡sɑʊ̯˨˩˦ ʂɑŋ˥˩ xɑʊ̯˨˩˦/",
+            "nativeApprox": "dzaow-shahng how",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "早上好！吃早饭了吗？"
+          },
+          {
+            "word": "再见",
+            "translation": "Goodbye",
+            "phonetic": "/t͡saɪ̯˥˩ tɕjɛn˥˩/",
+            "nativeApprox": "dsigh-jyen",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "再见，明天见！"
+          },
+          {
+            "word": "对不起",
+            "translation": "Sorry",
+            "phonetic": "/tweɪ̯˥˩ pu˥˩ tɕʰi˨˩˦/",
+            "nativeApprox": "dway-boo-chee",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "对不起，我迟到了。"
+          },
+          {
+            "word": "是",
+            "translation": "Yes",
+            "phonetic": "/ʂɨ˥˩/",
+            "nativeApprox": "shur",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "是的，我明白了。"
+          },
+          {
+            "word": "不是",
+            "translation": "No",
+            "phonetic": "/pu˥˩ ʂɨ˥˩/",
+            "nativeApprox": "boo-shur",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "不是，谢谢。"
+          }
+        ],
+        "ru": [
+          {
+            "word": "Привет",
+            "translation": "Hello (informal)",
+            "phonetic": "/prʲɪˈvʲet/",
+            "nativeApprox": "pree-VYET",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Привет! Как дела?"
+          },
+          {
+            "word": "Спасибо",
+            "translation": "Thank you",
+            "phonetic": "/spɐˈsʲibə/",
+            "nativeApprox": "spah-SEE-bah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Большое спасибо!"
+          },
+          {
+            "word": "Пожалуйста",
+            "translation": "Please",
+            "phonetic": "/pəʐɐˈlujsʲtə/",
+            "nativeApprox": "poh-zhah-LOO-stah",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Воды, пожалуйста."
+          },
+          {
+            "word": "Доброе утро",
+            "translation": "Good morning",
+            "phonetic": "/ˈdobrəje ˈutrə/",
+            "nativeApprox": "DOH-broh-yeh OO-troh",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Доброе утро! Как спалось?"
+          },
+          {
+            "word": "Пока",
+            "translation": "Bye",
+            "phonetic": "/pɐˈka/",
+            "nativeApprox": "poh-KAH",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Пока, увидимся завтра!"
+          },
+          {
+            "word": "Извините",
+            "translation": "Excuse me",
+            "phonetic": "/ɪzvʲɪˈnʲitʲe/",
+            "nativeApprox": "eez-vee-NEE-tyeh",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "Извините, где метро?"
+          },
+          {
+            "word": "Да",
+            "translation": "Yes",
+            "phonetic": "/da/",
+            "nativeApprox": "dah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Да, я понимаю."
+          },
+          {
+            "word": "Нет",
+            "translation": "No",
+            "phonetic": "/nʲet/",
+            "nativeApprox": "nyet",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Нет, спасибо."
+          }
+        ],
+        "ar": [
+          {
+            "word": "مرحبا",
+            "translation": "Hello",
+            "phonetic": "/marħaba/",
+            "nativeApprox": "mar-HAH-bah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "مرحبا، كيف حالك؟"
+          },
+          {
+            "word": "شكرا",
+            "translation": "Thank you",
+            "phonetic": "/ʃukran/",
+            "nativeApprox": "SHOOK-ran",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "شكرا جزيلا لك."
+          },
+          {
+            "word": "من فضلك",
+            "translation": "Please",
+            "phonetic": "/min faðlik/",
+            "nativeApprox": "min FADH-lik",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "ماء، من فضلك."
+          },
+          {
+            "word": "صباح الخير",
+            "translation": "Good morning",
+            "phonetic": "/sˤabaːħ alxiːr/",
+            "nativeApprox": "sah-BAH al-KHEER",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "صباح الخير، هل أنت بخير؟"
+          },
+          {
+            "word": "وداعا",
+            "translation": "Goodbye",
+            "phonetic": "/wadaʕan/",
+            "nativeApprox": "wah-dah-AN",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "وداعا، إلى اللقاء."
+          },
+          {
+            "word": "آسف",
+            "translation": "Sorry",
+            "phonetic": "/ʔaːsif/",
+            "nativeApprox": "AH-sif",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "آسف على التأخير."
+          },
+          {
+            "word": "نعم",
+            "translation": "Yes",
+            "phonetic": "/naʕam/",
+            "nativeApprox": "nah-AM",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "نعم، أفهم."
+          },
+          {
+            "word": "لا",
+            "translation": "No",
+            "phonetic": "/laː/",
+            "nativeApprox": "lah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "لا، شكرا."
+          }
+        ],
+        "hi": [
+          {
+            "word": "नमस्ते",
+            "translation": "Hello/Namaste",
+            "phonetic": "/nəməsteː/",
+            "nativeApprox": "nuh-MUS-tay",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "नमस्ते, आप कैसे हैं?"
+          },
+          {
+            "word": "धन्यवाद",
+            "translation": "Thank you",
+            "phonetic": "/dʱəɲjəʋaːd/",
+            "nativeApprox": "DHUN-yuh-vahd",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "बहुत धन्यवाद।"
+          },
+          {
+            "word": "कृपया",
+            "translation": "Please",
+            "phonetic": "/kɾɪpəjaː/",
+            "nativeApprox": "KRUH-puh-yah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "पानी दीजिए, कृपया।"
+          },
+          {
+            "word": "सुप्रभात",
+            "translation": "Good morning",
+            "phonetic": "/sʊpɾəɓaːt/",
+            "nativeApprox": "soo-pruh-BHAHT",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "सुप्रभात! आपका दिन शुभ हो।"
+          },
+          {
+            "word": "अलविदा",
+            "translation": "Goodbye",
+            "phonetic": "/əlʋiːdaː/",
+            "nativeApprox": "ul-VEE-dah",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "अलविदा, फिर मिलेंगे।"
+          },
+          {
+            "word": "माफ़ कीजिए",
+            "translation": "Excuse me",
+            "phonetic": "/maːf kiːdʒije/",
+            "nativeApprox": "mahf KEE-jee-yeh",
+            "difficulty": "intermediate",
+            "category": "greetings",
+            "exampleSentence": "माफ़ कीजिए, स्टेशन कहाँ है?"
+          },
+          {
+            "word": "हाँ",
+            "translation": "Yes",
+            "phonetic": "/ɦãː/",
+            "nativeApprox": "hahn",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "हाँ, मैं समझा।"
+          },
+          {
+            "word": "नहीं",
+            "translation": "No",
+            "phonetic": "/nəɦĩː/",
+            "nativeApprox": "nuh-HEEN",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "नहीं, धन्यवाद।"
+          }
+        ],
+        "vi": [
+          {
+            "word": "Xin chào",
+            "translation": "Hello",
+            "phonetic": "/sin t͡ɕaw/",
+            "nativeApprox": "sin CHOW",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Xin chào, bạn khỏe không?"
+          },
+          {
+            "word": "Cảm ơn",
+            "translation": "Thank you",
+            "phonetic": "/kam ʔɤn/",
+            "nativeApprox": "kahm UHN",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Cảm ơn bạn rất nhiều."
+          },
+          {
+            "word": "Làm ơn",
+            "translation": "Please",
+            "phonetic": "/lam ʔɤn/",
+            "nativeApprox": "lahm UHN",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Cho tôi nước, làm ơn."
+          },
+          {
+            "word": "Chào buổi sáng",
+            "translation": "Good morning",
+            "phonetic": "/t͡ɕaw ʔɓuj ʔsaŋ/",
+            "nativeApprox": "chow boy SAHNG",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Chào buổi sáng! Bạn ngủ ngon không?"
+          },
+          {
+            "word": "Tạm biệt",
+            "translation": "Goodbye",
+            "phonetic": "/tam ʔɓiət/",
+            "nativeApprox": "tahm byet",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Tạm biệt, hẹn gặp lại!"
+          },
+          {
+            "word": "Xin lỗi",
+            "translation": "Sorry",
+            "phonetic": "/sin loj/",
+            "nativeApprox": "sin LOY",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Xin lỗi, tôi đến muộn."
+          },
+          {
+            "word": "Vâng",
+            "translation": "Yes",
+            "phonetic": "/vɤŋ/",
+            "nativeApprox": "vuhng",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Vâng, tôi hiểu rồi."
+          },
+          {
+            "word": "Không",
+            "translation": "No",
+            "phonetic": "/xaːwŋ͡m/",
+            "nativeApprox": "khohng",
+            "difficulty": "beginner",
+            "category": "greetings",
+            "exampleSentence": "Không, cảm ơn."
+          }
+        ]
+      }
+    },
+    {
+      "interaction": 2,
+      "description": "Daily life and common objects",
+      "words": {
+        "en": [
+          {
+            "word": "Water",
+            "translation": "Water",
+            "phonetic": "/ˈwɔːtər/",
+            "nativeApprox": "WAH-ter",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Can I have some water, please?"
+          },
+          {
+            "word": "Food",
+            "translation": "Food",
+            "phonetic": "/fuːd/",
+            "nativeApprox": "food",
+            "difficulty": "beginner",
+            "category": "food",
+            "exampleSentence": "This food is delicious."
+          },
+          {
+            "word": "House",
+            "translation": "House",
+            "phonetic": "/haʊs/",
+            "nativeApprox": "howss",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "I live in a small house."
+          },
+          {
+            "word": "Time",
+            "translation": "Time",
+            "phonetic": "/taɪm/",
+            "nativeApprox": "tyme",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "What time is it now?"
+          },
+          {
+            "word": "Friend",
+            "translation": "Friend",
+            "phonetic": "/fɹɛnd/",
+            "nativeApprox": "frend",
+            "difficulty": "beginner",
+            "category": "family",
+            "exampleSentence": "She is my best friend."
+          },
+          {
+            "word": "Money",
+            "translation": "Money",
+            "phonetic": "/ˈmʌni/",
+            "nativeApprox": "MUH-nee",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Do you have enough money?"
+          },
+          {
+            "word": "Book",
+            "translation": "Book",
+            "phonetic": "/bʊk/",
+            "nativeApprox": "buhk",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "I'm reading an interesting book."
+          },
+          {
+            "word": "Work",
+            "translation": "Work",
+            "phonetic": "/wɜːrk/",
+            "nativeApprox": "wurk",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "I go to work every day."
+          }
+        ],
+        "fr": [
+          {
+            "word": "Eau",
+            "translation": "Water",
+            "phonetic": "/o/",
+            "nativeApprox": "oh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Je voudrais un verre d'eau."
+          },
+          {
+            "word": "Nourriture",
+            "translation": "Food",
+            "phonetic": "/nu.ʁi.tyʁ/",
+            "nativeApprox": "noo-ree-TYOOR",
+            "difficulty": "intermediate",
+            "category": "food",
+            "exampleSentence": "La nourriture est délicieuse."
+          },
+          {
+            "word": "Maison",
+            "translation": "House",
+            "phonetic": "/mɛ.zɔ̃/",
+            "nativeApprox": "meh-ZOH",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "J'habite dans une petite maison."
+          },
+          {
+            "word": "Temps",
+            "translation": "Time",
+            "phonetic": "/tɑ̃/",
+            "nativeApprox": "tah",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Quelle heure est-il?"
+          },
+          {
+            "word": "Ami",
+            "translation": "Friend",
+            "phonetic": "/a.mi/",
+            "nativeApprox": "ah-MEE",
+            "difficulty": "beginner",
+            "category": "family",
+            "exampleSentence": "Il est mon meilleur ami."
+          },
+          {
+            "word": "Argent",
+            "translation": "Money",
+            "phonetic": "/aʁ.ʒɑ̃/",
+            "nativeApprox": "ahr-ZHAH",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Avez-vous assez d'argent?"
+          },
+          {
+            "word": "Livre",
+            "translation": "Book",
+            "phonetic": "/liːvʁ/",
+            "nativeApprox": "LEE-vruh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Je lis un livre intéressant."
+          },
+          {
+            "word": "Travail",
+            "translation": "Work",
+            "phonetic": "/tʁa.vaj/",
+            "nativeApprox": "trah-VAHY",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Je vais au travail chaque jour."
+          }
+        ],
+        "es": [
+          {
+            "word": "Agua",
+            "translation": "Water",
+            "phonetic": "/ˈa.ɣwa/",
+            "nativeApprox": "AH-gwah",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "¿Puedo tener un poco de agua?"
+          },
+          {
+            "word": "Comida",
+            "translation": "Food",
+            "phonetic": "/koˈmi.ða/",
+            "nativeApprox": "koh-MEE-dah",
+            "difficulty": "beginner",
+            "category": "food",
+            "exampleSentence": "Esta comida está deliciosa."
+          },
+          {
+            "word": "Casa",
+            "translation": "House",
+            "phonetic": "/ˈka.sa/",
+            "nativeApprox": "KAH-sah",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Vivo en una casa pequeña."
+          },
+          {
+            "word": "Tiempo",
+            "translation": "Time",
+            "phonetic": "/ˈtjem.po/",
+            "nativeApprox": "TYEM-poh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "¿Qué hora es?"
+          },
+          {
+            "word": "Amigo",
+            "translation": "Friend",
+            "phonetic": "/aˈmi.ɣo/",
+            "nativeApprox": "ah-MEE-goh",
+            "difficulty": "beginner",
+            "category": "family",
+            "exampleSentence": "Él es mi mejor amigo."
+          },
+          {
+            "word": "Dinero",
+            "translation": "Money",
+            "phonetic": "/diˈne.ɾo/",
+            "nativeApprox": "dee-NEH-roh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "¿Tienes suficiente dinero?"
+          },
+          {
+            "word": "Libro",
+            "translation": "Book",
+            "phonetic": "/ˈli.βɾo/",
+            "nativeApprox": "LEE-broh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Estoy leyendo un libro interesante."
+          },
+          {
+            "word": "Trabajo",
+            "translation": "Work",
+            "phonetic": "/tɾaˈβa.xo/",
+            "nativeApprox": "trah-BAH-hoh",
+            "difficulty": "beginner",
+            "category": "daily life",
+            "exampleSentence": "Voy al trabajo todos los días."
+          }
+        ]
+      }
+    },
+    {
+      "interaction": 3,
+      "description": "Travel and directions",
+      "words": {
+        "en": [
+          {
+            "word": "Airport",
+            "translation": "Airport",
+            "phonetic": "/ˈɛr.pɔːrt/",
+            "nativeApprox": "AIR-port",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Where is the airport?"
+          },
+          {
+            "word": "Hotel",
+            "translation": "Hotel",
+            "phonetic": "/hoʊˈtɛl/",
+            "nativeApprox": "hoh-TEL",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "I need to book a hotel."
+          },
+          {
+            "word": "Train",
+            "translation": "Train",
+            "phonetic": "/treɪn/",
+            "nativeApprox": "trayn",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "The train leaves at 9 AM."
+          },
+          {
+            "word": "Left",
+            "translation": "Left",
+            "phonetic": "/lɛft/",
+            "nativeApprox": "left",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Turn left at the corner."
+          },
+          {
+            "word": "Right",
+            "translation": "Right",
+            "phonetic": "/raɪt/",
+            "nativeApprox": "ryte",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Go right after the bank."
+          },
+          {
+            "word": "Bathroom",
+            "translation": "Bathroom",
+            "phonetic": "/ˈbæθ.ruːm/",
+            "nativeApprox": "BATH-room",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Where is the bathroom?"
+          },
+          {
+            "word": "Ticket",
+            "translation": "Ticket",
+            "phonetic": "/ˈtɪk.ɪt/",
+            "nativeApprox": "TIH-kit",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "I need a ticket to Paris."
+          },
+          {
+            "word": "Help",
+            "translation": "Help",
+            "phonetic": "/hɛlp/",
+            "nativeApprox": "help",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Can you help me, please?"
+          }
+        ],
+        "fr": [
+          {
+            "word": "Aéroport",
+            "translation": "Airport",
+            "phonetic": "/a.e.ʁɔ.pɔʁ/",
+            "nativeApprox": "ah-ay-roh-POR",
+            "difficulty": "intermediate",
+            "category": "travel",
+            "exampleSentence": "Où est l'aéroport?"
+          },
+          {
+            "word": "Hôtel",
+            "translation": "Hotel",
+            "phonetic": "/o.tɛl/",
+            "nativeApprox": "oh-TEL",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Je dois réserver un hôtel."
+          },
+          {
+            "word": "Train",
+            "translation": "Train",
+            "phonetic": "/tʁɛ̃/",
+            "nativeApprox": "tra",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Le train part à 9h."
+          },
+          {
+            "word": "Gauche",
+            "translation": "Left",
+            "phonetic": "/ɡoʃ/",
+            "nativeApprox": "gohsh",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Tournez à gauche au coin."
+          },
+          {
+            "word": "Droite",
+            "translation": "Right",
+            "phonetic": "/dʁwat/",
+            "nativeApprox": "drwaht",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Allez à droite après la banque."
+          },
+          {
+            "word": "Toilettes",
+            "translation": "Bathroom",
+            "phonetic": "/twa.lɛt/",
+            "nativeApprox": "twah-LET",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Où sont les toilettes?"
+          },
+          {
+            "word": "Billet",
+            "translation": "Ticket",
+            "phonetic": "/bi.jɛ/",
+            "nativeApprox": "bee-YAY",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Je voudrais un billet pour Paris."
+          },
+          {
+            "word": "Aide",
+            "translation": "Help",
+            "phonetic": "/ɛd/",
+            "nativeApprox": "aid",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Pouvez-vous m'aider, s'il vous plaît?"
+          }
+        ],
+        "es": [
+          {
+            "word": "Aeropuerto",
+            "translation": "Airport",
+            "phonetic": "/a.e.ɾoˈpweɾ.to/",
+            "nativeApprox": "ah-eh-roh-PWEHR-toh",
+            "difficulty": "intermediate",
+            "category": "travel",
+            "exampleSentence": "¿Dónde está el aeropuerto?"
+          },
+          {
+            "word": "Hotel",
+            "translation": "Hotel",
+            "phonetic": "/oˈtɛl/",
+            "nativeApprox": "oh-TEL",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Necesito reservar un hotel."
+          },
+          {
+            "word": "Tren",
+            "translation": "Train",
+            "phonetic": "/tɾen/",
+            "nativeApprox": "tren",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "El tren sale a las 9."
+          },
+          {
+            "word": "Izquierda",
+            "translation": "Left",
+            "phonetic": "/iθˈkjeɾ.ða/",
+            "nativeApprox": "eeth-KYER-dah",
+            "difficulty": "intermediate",
+            "category": "travel",
+            "exampleSentence": "Gire a la izquierda en la esquina."
+          },
+          {
+            "word": "Derecha",
+            "translation": "Right",
+            "phonetic": "/deˈɾe.t͡ʃa/",
+            "nativeApprox": "deh-REH-chah",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Vaya a la derecha después del banco."
+          },
+          {
+            "word": "Baño",
+            "translation": "Bathroom",
+            "phonetic": "/ˈba.ɲo/",
+            "nativeApprox": "BAH-nyoh",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "¿Dónde está el baño?"
+          },
+          {
+            "word": "Boleto",
+            "translation": "Ticket",
+            "phonetic": "/boˈle.to/",
+            "nativeApprox": "boh-LEH-toh",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "Necesito un boleto a París."
+          },
+          {
+            "word": "Ayuda",
+            "translation": "Help",
+            "phonetic": "/aˈʝu.ða/",
+            "nativeApprox": "ah-YOO-dah",
+            "difficulty": "beginner",
+            "category": "travel",
+            "exampleSentence": "¿Me puede ayudar, por favor?"
+          }
+        ]
+      }
+    }
+  ]
+}

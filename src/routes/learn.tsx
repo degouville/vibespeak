@@ -16,6 +16,8 @@ interface SessionData {
   targetLang: string
 }
 
+const INTERACTION_KEY = 'vibespeak_interaction'
+
 function LearnPage() {
   const navigate = useNavigate()
   const [session, setSession] = useState<SessionData | null>(null)
@@ -23,13 +25,16 @@ function LearnPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [interactionNum, setInteractionNum] = useState(1)
   const didInit = useRef(false)
   const sessionRef = useRef<SessionData | null>(null)
   const categoryRef = useRef<Category | null>(null)
+  const interactionRef = useRef(1)
 
   // Keep refs in sync
   sessionRef.current = session
   categoryRef.current = selectedCategory
+  interactionRef.current = interactionNum
 
   useEffect(() => {
     const stored = localStorage.getItem('vibespeak_session')
@@ -40,6 +45,13 @@ function LearnPage() {
     try {
       const parsed = JSON.parse(stored) as SessionData
       setSession(parsed)
+      // Load saved interaction count
+      const savedInteraction = localStorage.getItem(INTERACTION_KEY)
+      if (savedInteraction) {
+        const num = parseInt(savedInteraction, 10)
+        setInteractionNum(num)
+        interactionRef.current = num
+      }
     } catch {
       navigate({ to: '/' })
     }
@@ -53,6 +65,7 @@ function LearnPage() {
     setError(null)
 
     try {
+      const currentInteraction = interactionRef.current
       const result = await generateWords({
         data: {
           sessionId: s.sessionId,
@@ -60,6 +73,7 @@ function LearnPage() {
           targetLang: s.targetLang,
           category: categoryRef.current ?? undefined,
           context,
+          interactionNum: context ? undefined : currentInteraction,
         },
       })
 
@@ -67,6 +81,13 @@ function LearnPage() {
         setError(result.error)
       } else {
         setCards(result.words)
+        // Increment interaction count after successful generation (only for non-context requests)
+        if (!context) {
+          const nextInteraction = Math.min(currentInteraction + 1, 4)
+          setInteractionNum(nextInteraction)
+          interactionRef.current = nextInteraction
+          localStorage.setItem(INTERACTION_KEY, String(nextInteraction))
+        }
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
@@ -89,6 +110,7 @@ function LearnPage() {
 
   const handleReset = () => {
     localStorage.removeItem('vibespeak_session')
+    localStorage.removeItem(INTERACTION_KEY)
     navigate({ to: '/' })
   }
 

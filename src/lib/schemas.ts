@@ -22,6 +22,7 @@ export const generateRequestSchema = z.object({
   targetLang: z.string().min(2).max(5),
   category: z.string().optional(),
   context: z.string().optional(),
+  interactionNum: z.number().int().min(1).max(100).optional(),
 })
 
 export const initSessionRequestSchema = z.object({

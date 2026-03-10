@@ -4,10 +4,19 @@ import { aiResponseSchema, generateRequestSchema } from '../lib/schemas'
 import { chatCompletion } from '../lib/openrouter'
 import { buildSystemPrompt, buildGeneratePrompt } from './prompts'
 import { LANGUAGES } from '../lib/constants'
+import { getSeedWords } from '../lib/seed-words'
 
 const _generateWords = createServerFn({ method: 'POST' })
   .handler(async (ctx: any) => {
-    const { nativeLang, targetLang, category, context } = generateRequestSchema.parse(ctx.data)
+    const { nativeLang, targetLang, category, context, interactionNum } = generateRequestSchema.parse(ctx.data)
+
+    // Use seed words for first 3 interactions (no API call needed)
+    if (interactionNum && interactionNum >= 1 && interactionNum <= 3 && !context && !category) {
+      const seedWords = getSeedWords(interactionNum, targetLang, nativeLang)
+      if (seedWords && seedWords.length > 0) {
+        return { words: seedWords, error: null }
+      }
+    }
 
     const nativeName = LANGUAGES.find((l) => l.code === nativeLang)?.name ?? nativeLang
     const targetName = LANGUAGES.find((l) => l.code === targetLang)?.name ?? targetLang
@@ -35,4 +44,5 @@ export const generateWords = _generateWords as unknown as (opts: { data: {
   targetLang: string
   category?: string
   context?: string
+  interactionNum?: number
 } }) => Promise<{ words: Array<{ word: string; translation: string; phonetic: string; nativeApprox: string; difficulty: 'beginner' | 'intermediate' | 'advanced'; category: string; exampleSentence: string }>; error: string | null }>
