@@ -15,11 +15,6 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
-  server: {
-    watch: {
-      ignored: ['**/vibespeak.db', '**/vibespeak.db-wal', '**/vibespeak.db-shm'],
-    },
-  },
 })
 
 export default config
