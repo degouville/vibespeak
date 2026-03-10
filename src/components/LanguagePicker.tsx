@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from '@tanstack/react-router'
 import { gsap } from 'gsap'
 import { LANGUAGES } from '../lib/constants'
-import { initSession } from '../server/functions'
 
 type Step = 'native' | 'target'
 
@@ -31,7 +30,7 @@ export default function LanguagePicker() {
 
     if (!nativeLang) return
 
-    const { sessionId } = await initSession({ data: { nativeLang, targetLang: code } })
+    const sessionId = crypto.randomUUID()
     localStorage.setItem('vibespeak_session', JSON.stringify({
       sessionId,
       nativeLang,

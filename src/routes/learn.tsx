@@ -2,7 +2,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { WordCard } from '../lib/schemas'
 import type { Category } from '../lib/constants'
-import { generateWords, getSessionUsage } from '../server/functions'
+import { generateWords } from '../server/functions'
 import Sidebar from '../components/Sidebar'
 import CardGrid from '../components/CardGrid'
 import Breadcrumb from '../components/Breadcrumb'
@@ -21,7 +21,6 @@ function LearnPage() {
   const [session, setSession] = useState<SessionData | null>(null)
   const [cards, setCards] = useState<WordCard[]>([])
   const [isLoading, setIsLoading] = useState(false)
-  const [spent, setSpent] = useState(0)
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
   const [error, setError] = useState<string | null>(null)
   const didInit = useRef(false)
@@ -47,13 +46,6 @@ function LearnPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const refreshUsage = useCallback(async () => {
-    const s = sessionRef.current
-    if (!s) return
-    const data = await getSessionUsage({ data: { sessionId: s.sessionId } })
-    setSpent(data.totalCost)
-  }, [])
-
   const handleGenerate = useCallback(async (context?: string) => {
     const s = sessionRef.current
     if (!s) return
@@ -76,23 +68,20 @@ function LearnPage() {
       } else {
         setCards(result.words)
       }
-
-      await refreshUsage()
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
     } finally {
       setIsLoading(false)
     }
-  }, [refreshUsage])
+  }, [])
 
   // Auto-generate on first session load
   useEffect(() => {
     if (session && !didInit.current) {
       didInit.current = true
       handleGenerate()
-      refreshUsage()
     }
-  }, [session, handleGenerate, refreshUsage])
+  }, [session, handleGenerate])
 
   const handleExplore = (word: string) => {
     handleGenerate(word)
@@ -125,7 +114,7 @@ function LearnPage() {
         <Sidebar
           nativeLang={session.nativeLang}
           targetLang={session.targetLang}
-          spent={spent}
+          spent={0}
           selectedCategory={selectedCategory}
           onSelectCategory={handleCategorySelect}
           onGenerate={() => handleGenerate()}
