@@ -112,7 +112,7 @@ function LearnPage() {
   const targetName = LANGUAGES.find((l) => l.code === session.targetLang)?.name ?? session.targetLang
 
   return (
-    <main className="page-wrap px-4 pb-8 pt-6">
+    <main className="px-4 pb-8 pt-6">
       <div className="mb-4">
         <Breadcrumb items={[
           { label: 'VibeSPeak', href: '/' },

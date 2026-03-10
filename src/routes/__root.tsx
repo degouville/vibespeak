@@ -28,7 +28,7 @@ export const Route = createRootRoute({
   }),
   shellComponent: RootDocument,
   notFoundComponent: () => (
-    <main className="page-wrap flex flex-col items-center justify-center px-4 py-24 text-center">
+    <main className="flex flex-col items-center justify-center px-4 py-24 text-center">
       <p className="island-kicker mb-3">404</p>
       <h1 className="display-title mb-4 text-3xl font-bold text-[var(--sea-ink)]">Page not found</h1>
       <Link to="/" className="rounded-full border border-[rgba(50,143,151,0.3)] bg-[rgba(79,184,178,0.14)] px-5 py-2.5 text-sm font-semibold text-[var(--lagoon-deep)] no-underline">
